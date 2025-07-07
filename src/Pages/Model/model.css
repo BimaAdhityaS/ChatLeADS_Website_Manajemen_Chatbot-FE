@@ -1,0 +1,148 @@
+.config_container {
+    margin-left: 200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+line {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.divider {
+    height: 1px;
+    background-color: #ddd;
+}
+
+.config_sections {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.config_section {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.config_section h4 {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+    color: #3498db;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+}
+
+.classifier_group h5 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #2c3e50;
+}
+
+.form_group {
+    margin-bottom: 1rem;
+}
+
+.form_group label {
+    display: block;
+    margin-top : 0.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #555;
+}
+
+.form_group input[type="text"],
+.form_group input[type="number"],
+.form_group select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.form_row {
+    display: flex;
+    gap: 1rem;
+}
+
+.form_row .form_group {
+    flex: 1;
+}
+
+.checkbox_group label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.checkbox_group input[type="checkbox"] {
+    margin: 0;
+}
+
+.featurizer_group {
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+.action_buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 12px;
+}
+
+.save_button, .reset_button {
+    padding: 12px 16px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.save_button {
+    background-color: #43B75D;
+    color: white;
+}
+
+.save_button:hover {
+    background-color: #3DAA52;
+}
+
+.reset_button {
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+.reset_button:hover {
+    background-color: #e1e1e1;
+}
+
+.save_button:disabled, .reset_button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.config_description {
+    color: #666;
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.input_description {
+    color: #888;
+    font-size: 0.75rem;
+    display: block;
+    margin-top: 0.25rem;
+    line-height: 1.3;
+}

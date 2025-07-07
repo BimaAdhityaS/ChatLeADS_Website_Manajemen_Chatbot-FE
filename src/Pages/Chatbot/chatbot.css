@@ -1,0 +1,454 @@
+.chatbot_container {
+    margin-left: 200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100vh;
+    /* Ensure the container takes the full height of the viewport */
+}
+
+line {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.B3.grey {
+    color: #9EA2AE;
+}
+
+.chatbot_content {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex-grow: 1;
+    /* Allow the content to grow and fill the remaining space */
+    overflow-y: auto;
+    /* Allow the content to scroll */
+}
+
+.chatbot_input_container {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+}
+
+.chatbot_input_container form {
+    display: flex;
+    gap: 10px;
+}
+
+.chatbot_input {
+    padding: 12px;
+    width: 100%;
+    border-radius: 4px;
+    border: 1.5px solid rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    font-weight: 400;
+    transition: all 0.3s ease-in-out;
+}
+
+.chatbot_input:hover {
+    border: 1.5px solid #9EA2AE;
+}
+
+.chatbot_input:focus {
+    outline: none;
+    border: 1.5px solid #2F80ED;
+}
+
+.chatbot_input::placeholder {
+    color: #9EA2AE;
+}
+
+.chatbot_submit {
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    color: white;
+    font-size: 20px;
+    background-color: #4E61F6;
+    border: none;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.chatbot_submit:hover {
+    background-color: #3D4CCF;
+}
+
+.chatbot_bubble.chatbot {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    max-width: 50%;
+    align-self: flex;
+}
+
+.chatbot_bubble.user {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    max-width: 50%;
+    align-self: flex-end;
+}
+
+.chatbot_bubble.chatbot img,
+.chatbot_bubble.user img {
+    width: 44px;
+    height: 44px;
+}
+
+.chatbot_bubble.user div,
+.chatbot_bubble.chatbot div {
+    padding: 16px;
+    border: solid 1px #CCCCCC;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 8px;
+}
+
+.chatbot_bubble.chatbot .output_image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin-bottom: 8px;
+}
+
+.chatbot_bubble.chatbot .output_video {
+    width: 100%;
+    height: auto;
+    margin-bottom: 8px;
+}
+
+
+.chatbot_bubble.user div {
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.tracker_container {
+    margin-left: 200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto;
+    height: 100vh;
+}
+
+.tracker_button_ls {
+    display: flex;
+    gap: 12px;
+    flex-direction: row;
+}
+
+.button_refresh_tracker {
+    display: flex;
+    flex-direction: row;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    width: fit-content;
+    background-color: #43B75D;
+    border-radius: 4px;
+    border: none;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.button_refresh_tracker p {
+    margin: auto;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.button_refresh_tracker:hover {
+    background-color: #3A9C4D;
+    transition: 0.2s ease-in-out;
+}
+
+.button_reset_tracker {
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background-color: #EE443F;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.button_reset_tracker p {
+    margin: auto;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.button_reset_tracker:hover {
+    background-color: #D33A35;
+    transition: ease-in-out 0.2s;
+}
+
+.tracker_search_container {
+    position: relative;
+    display: inline-block;
+    max-width: 400px;
+}
+
+.tracker_search {
+    width: 100%;
+    padding-right: 40px;
+    /* Add space for the icon */
+    padding-left: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 4px;
+    border: 1.5px solid #E5E7EA;
+    font-size: 14px;
+    font-weight: 400;
+    transition: all 0.3s ease-in-out;
+}
+
+.tracker_search::placeholder {
+    color: #9EA2AE;
+}
+
+.tracker_search:hover {
+    border: 1.5px solid #9EA2AE;
+}
+
+.tracker_search:focus {
+    outline: none;
+    border: 1.5px solid #2F80ED;
+}
+
+.tracker_search_icon {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    color: #9EA2AE;
+    pointer-events: none;
+    /* Prevent the icon from blocking input clicks */
+}
+
+.tracker_table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tracker_table thead tr {
+    padding: 10px;
+}
+
+.tracker_table thead th {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.tracker_table tbody tr td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.tracker_pagination {
+    display: flex;
+    gap: 8px;
+}
+
+.tracker_pagination_number {
+    width: 32px;
+    height: 32px;
+    border-radius: 100px;
+    background: none;
+    border: none;
+    color: #4E61F6;
+    font-size: 16px;
+}
+
+.tracker_pagination_number:hover {
+    background-color: #F0F0F0;
+    transition: 0.3s ease-in-out;
+}
+
+.tracker_pagination_number.active {
+    background-color: #4E61F6;
+    color: white;
+}
+
+.tracker_pagination_btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 100px;
+    background: none;
+    border: none;
+    color: #4E61F6;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s ease-in-out;
+}
+
+.tracker_pagination_btn:hover {
+    background-color: #F0F0F0;
+    transition: 0.2s ease-in-out;
+}
+
+.detailTracker_container {
+    margin-left: 200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto;
+    height: 100vh;
+}
+
+.detailTracker_footer {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.detailTracker_footer.left {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.detailTracker_footer.right {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.detailTracker_content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.detailTracker_action {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.detailTracker_action .line {
+    flex: 1;
+    height: 4px;
+    /* Line thickness */
+}
+
+.detailTracker_action .line-orange {
+    background-color: #FFAA00;
+    /* Line color for "action" */
+}
+
+.detailTracker_action .line-green {
+    background-color: #43B75D;
+    /* Line color for others */
+}
+
+.detailTracker_action .line-red{
+    background-color: #EE443F;
+    /* Line color for "action" */
+}
+
+.detailTracker_action .line-blue{
+    background-color: #4E61F6;
+    /* Line color for "action" */
+}
+
+.detailTracker_action p {
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+}
+
+.tracker_bubble.bot {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    max-width: 50%;
+    align-self: flex;
+}
+
+.tracker_bubble.user {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    max-width: 50%;
+    align-self: flex-end;
+}
+
+.tracker_bubble.bot img,
+.tracker_bubble.user img {
+    width: 44px;
+    height: 44px;
+}
+
+/* buat container columnya biar bisa display intent dll */
+.bubble_container {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+/* Buat bubblenya */
+.bubble_container div {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 4px;
+    border: solid 1px #CCCCCC;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 8px;
+}
+
+
+.tracker_bubble.bot .output_image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin-bottom: 8px;
+}
+
+.tracker_bubble.bot .output_video {
+    width: 100%;
+    height: auto;
+    margin-bottom: 8px;
+}
+
+
+.tracker_bubble.user .bubble_container div {
+    background: rgba(0, 0, 0, 0.25);
+}

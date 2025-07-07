@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #131927;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 48px;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 40px;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 32px;
+}
+
+h4 {
+    font-weight: 600;
+    font-size: 28px;
+}
+
+h5 {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.S1 {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.S2 {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.B1 {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.B1.grey{
+    font-weight: 400;
+    font-size: 16px;
+    color: #6D717F;
+}
+
+.B2 {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.B2.grey{
+    font-weight: 500;
+    font-size: 16px;
+    color: #6D717F;
+}
+
+.B3 {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.B3.grey{
+    font-weight: 400;
+    font-size: 14px;
+    color: #6D717F;
+}
+
+.B4 {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.C1 {
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.C2 {
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.C3 {
+    font-weight: 500;
+    font-size: 10px;
+}
+
+input::placeholder {
+    color: #9EA2AE;
+}
+
+i {
+    color: #131927;
+}
+
+.Toastify__toast {
+    font-size: 14px;
+}

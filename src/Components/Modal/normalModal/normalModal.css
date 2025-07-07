@@ -1,0 +1,102 @@
+.normal_blurBG {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(4px);
+    z-index: 1; /* Keep this lower than the modal */
+}
+
+.normal_centered {
+    position: fixed;
+    padding-left: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.normal_modal {
+    position: relative;
+    max-width: 420px;
+    background-color: #EDEFFE;
+    border-radius: 12px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px;
+    border: 1.5px solid #4E61F6;
+}
+
+.normal_modal p.S1{
+    text-align: center;
+}
+
+.normal_modal label{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 386px;
+}
+
+.normal_button_ls{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.normal_button_ls button{
+    padding: 0px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.normal_confirm{
+    color: #0095FF;
+}
+
+.normal_cancel{
+    color: #9EA2AE;
+}
+
+.normal_confirm:hover{
+    color: #0077CC;
+    transition: ease-in-out 0.2s;
+}
+
+.normal_cancel:hover{
+    color: #6D717F;
+    transition: ease-in-out 0.2s;
+}
+
+.normal_modal input{
+    border-radius: 4px;
+    border: 1px solid #E5E7EA;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    color : #131927
+}
+
+.normal_modal input:hover{
+    border: 1px solid #4E61F6;
+    transition: ease-in-out 0.2s;
+}
+
+.normal_modal input:focus{
+    outline: none;
+    border: 1px solid #4E61F6;
+}
+
+.normal_form{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}

@@ -1,0 +1,406 @@
+.percakapan_container {
+    margin-left: 200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-height: 100vh;
+}
+
+line {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 8px 0;
+}
+
+.first_container {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+    width: 100%;
+}
+
+.button_create_percakapan {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    background-color: #43B75D;
+    border-radius: 4px;
+    border: none;
+    gap: 8px;
+    cursor: pointer;
+    width: 300px;
+}
+
+.button_create_percakapan:hover {
+    background-color: #3A9C4D;
+    transition: 0.2s ease-in-out;
+}
+
+.percakapan_search_container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.percakapan_search {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 4px;
+    border: 1.5px solid #E5E7EA;
+    font-size: 14px;
+    font-weight: 400;
+    transition: all 0.3s ease-in-out;
+}
+
+.percakapan_search::placeholder {
+    color: #9EA2AE;
+}
+
+.percakapan_search:hover {
+    border: 1.5px solid #9EA2AE;
+}
+
+.percakapan_search:focus {
+    outline: none;
+    border: 1.5px solid #2F80ED;
+}
+
+.percakapan_search_icon {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    color: #9EA2AE;
+    pointer-events: none;
+}
+
+.percakapan_table_container {
+    width: 100%;
+    overflow-x: auto;
+    flex-grow: 1;
+}
+
+.percakapan_table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    table-layout: fixed;
+    /* Added to control column widths */
+}
+
+.percakapan_table th {
+    background-color: #f8f9fa;
+    padding: 8px 4px;
+    text-align: left;
+    font-weight: 600;
+    border-bottom: 2px solid #e9ecef;
+}
+
+.percakapan_table td {
+    padding: 2px 4px;
+    border-bottom: 1px solid #e9ecef;
+    vertical-align: middle;
+    word-wrap: break-word;
+    /* Added to handle long text */
+}
+
+/* Set column widths */
+.percakapan_table th:nth-child(1),
+.percakapan_table td:nth-child(1) {
+    width: 60%;
+    /* Name column takes most space */
+}
+
+.percakapan_table th:nth-child(2),
+.percakapan_table td:nth-child(2) {
+    width: 20%;
+    /* Type column */
+    text-align: center;
+    /* Center align type */
+}
+
+.percakapan_table th:nth-child(3),
+.percakapan_table td:nth-child(3) {
+    width: 20%;
+    /* Actions column */
+    text-align: center;
+    /* Right align actions */
+}
+
+/* .percakapan_table tr:last-child td {
+    border-bottom: none;
+} */
+
+.action_buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 0px;
+}
+
+.icon_button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.no_data {
+    text-align: center;
+    padding: 20px;
+    color: #6c757d;
+}
+
+.percakapan_pagination {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 0;
+    margin-top: auto;
+}
+
+.percakapan_pagination_btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 100px;
+    background: none;
+    border: none;
+    color: #4E61F6;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.percakapan_pagination_btn.active {
+    background-color: #4E61F6;
+    color: white;
+}
+
+.percakapan_pagination_btn:hover:not(.active) {
+    background-color: #F0F0F0;
+}
+
+.percakapan_pagination_btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.dialog_container {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    background-color: #EDEFFE;
+    border-radius: 8px;
+    height: 80vh;
+    /* Full screen height */
+    box-sizing: border-box;
+    overflow: hidden;
+    /* Important to confine overflow scroll inside .dialog_content */
+}
+
+.dialog_content {
+    flex-grow: 1;
+    overflow-y: auto;
+    min-height: 0;
+}
+
+.dialog_button_ls {
+    display: flex;
+    margin-top: 16px;
+    /* Optional: adds some spacing between the body and buttons */
+}
+
+.dialog_header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.dialog_button_ls {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.dialog_button_ls button {
+    width: 160px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.button_save_percakapan {
+    background-color: #43B75D;
+}
+
+.button_save_percakapan:hover {
+    background-color: #3A9C4D;
+}
+
+.button_cancel_percakapan {
+    background-color: #EE443F;
+}
+
+.button_cancel_percakapan:hover {
+    background-color: #D33A35;
+}
+
+.step-flex-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.select-container {
+    flex: 1;
+    max-width: 420px;
+    margin-bottom: 4px;
+}
+
+.text-left {
+    text-align: left;
+    margin-bottom: 4px;
+}
+
+.text-right {
+    text-align: right;
+    margin-bottom: 4px;
+}
+
+.align-left {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.align-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.step-select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.step-select:hover {
+    border: 1.5px solid #9EA2AE;
+    transition: ease-in-out 0.2s;
+}
+
+.step-select:focus {
+    outline: none;
+    border: 1.5px solid #2F80ED;
+}
+
+.delete_icon {
+    cursor: pointer;
+    color: #d00;
+}
+
+.rule_buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.story_buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.add_intent_button {
+    background-color: #E6F4FF;
+    border: 1.5px solid #0095FF;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #4E61F6;
+}
+
+.add_intent_button:hover {
+    background-color: #0095FF;
+    color: white;
+    transition: 0.2s ease-in-out;
+}
+
+.add_utterance_button {
+    background-color: #ECF8EF;
+    border: 1.5px solid #43B75D;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #43B75D;
+}
+
+.add_action_button {
+    background-color: #FFF7E6;
+    border: 1.5px solid #FFAA00;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #FFAA00;
+}
+
+.add_action_button:hover {
+    background-color: #FFAA00;
+    color: white;
+    transition: 0.2s ease-in-out;
+}
+
+.add_utterance_button:hover {
+    background-color: #43B75D;
+    color: white;
+    transition: 0.2s ease-in-out;
+}
+
+.input_name_percakapan {
+    background-color: #EDEFFE;
+    text-align: center;
+    padding: 4px;
+    border: 1.5px solid gray;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.input_name_percakapan:hover {
+    border: 1.5px solid #2F80ED;
+    transition: 0.2s ease-in-out;
+}
+
+.input_name_percakapan:focus {
+    outline: none;
+    border: 1.5px solid #2F80ED;
+}

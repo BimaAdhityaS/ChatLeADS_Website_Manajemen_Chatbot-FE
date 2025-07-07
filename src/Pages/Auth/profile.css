@@ -1,0 +1,65 @@
+.profile_container{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-left: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+line {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+h4{
+    font-weight: 400;
+}
+
+.button_edit, .button_change_password, .button_logout{
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    max-width: 264px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+}
+
+.button_edit p, .button_change_password p, .button_logout p{
+    margin: auto;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.button_edit{
+    background-color: #4E61F6;
+}
+
+.button_change_password{
+    background-color: #FFAA00;
+}
+
+.button_logout{
+    background-color: #EE443F;
+}
+
+.button_edit:hover{
+    background-color: #3D4CCF;
+    transition: ease-in-out 0.2s;
+}
+
+.button_change_password:hover{
+    background-color: #E59A00;
+    transition: ease-in-out 0.2s;
+}
+
+.button_logout:hover{
+    background-color: #D33A35;
+    transition: ease-in-out 0.2s;
+}

@@ -1,0 +1,112 @@
+.admin_container{
+    margin-left: 200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+line {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.button_invite{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    width: fit-content;
+    background-color: #43B75D;
+    border-radius: 4px;
+    border: none;
+    gap: 8px;
+}
+
+.button_invite p{
+    margin: auto;
+}
+
+.button_invite:hover{
+    background-color: #3A9C4D;
+    transition: 0.2s ease-in-out;
+}
+
+.admin_table{
+    margin-top: 8px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin_table thead tr{
+    padding: 10px;
+}
+
+.admin_table thead th{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.admin_table tbody tr td{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.admin_pagination {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 24px;
+}
+
+.admin_pagination_number{
+    width: 48px;
+    height: 48px;
+    border-radius: 100px;
+    background: none;
+    border: none;
+    color: #4E61F6;
+    font-size: 16px;
+}
+
+.admin_pagination_number:hover{
+    background-color: #F0F0F0;
+    transition: 0.3s ease-in-out;
+}
+
+.admin_pagination_number.active{
+    background-color: #4E61F6;
+    color: white;
+}
+
+.admin_pagination_btn{
+    width: 48px;
+    height: 48px;
+    border-radius: 100px;
+    background: none;
+    border: none;
+    color: #4E61F6;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s ease-in-out;
+}
+
+.admin_pagination_btn:hover{
+    background-color: #F0F0F0;
+    transition: 0.2s ease-in-out;
+}
+
