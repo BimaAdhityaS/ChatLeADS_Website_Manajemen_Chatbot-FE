@@ -1,3 +1,7 @@
+# Client ChatLeADS Website Manajemen Chatbot – Backend (MERN Stack)
+
+Ini adalah bagian frontend dari Website Manajemen Chatbot - ChatLeADS yang dibangun menggunakan **MERN Stack** (MongoDB, Express.js, React, Node.js).
+
 # Memulai Project dengan Create React App
 
 Project ini dibuat dengan [Create React App](https://github.com/facebook/create-react-app).
