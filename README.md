@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# Memulai Project dengan Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Project ini dibuat dengan [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Variabel Lingkungan (`.env`)
 
-In the project directory, you can run:
+Sebelum menjalankan project, pastikan kamu membuat file `.env` di root direktori project dan tambahkan variabel berikut:
+
+```env
+REACT_APP_BACKEND_URL=http://localhost:8000
+REACT_APP_RASA_URL=http://localhost:5005
+```
+
+Variabel ini digunakan untuk menghubungkan frontend React dengan server backend dan chatbot Rasa.
+
+## Perintah yang Tersedia
+
+Di dalam direktori project, kamu bisa menjalankan:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Menjalankan aplikasi dalam mode development.
+Buka [http://localhost:3000](http://localhost:3000) di browser untuk melihatnya.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Halaman akan otomatis memuat ulang saat kamu melakukan perubahan.
+Error lint juga akan muncul di konsol jika ada.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Menjalankan test runner dalam mode interaktif.
+Lihat dokumentasi tentang [menjalankan tes](https://facebook.github.io/create-react-app/docs/running-tests) untuk informasi lebih lanjut.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Membangun aplikasi untuk produksi ke folder `build`.
+React akan di-bundle dalam mode produksi dan dioptimalkan untuk performa terbaik.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Build akan diminifikasi dan nama file akan mengandung hash.
+Aplikasi siap untuk dideploy!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Lihat bagian tentang [deployment](https://facebook.github.io/create-react-app/docs/deployment) untuk info selengkapnya.
 
 ### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Catatan: Perintah ini tidak bisa dibatalkan!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Jika kamu tidak puas dengan konfigurasi bawaan, kamu bisa menjalankan `eject`. Ini akan menyalin semua file konfigurasi dan dependensi ke dalam project sehingga kamu punya kontrol penuh.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Semua perintah seperti `start`, `build`, dan `test` tetap bisa digunakan setelah `eject`, tapi akan mengarah ke skrip lokal yang telah disalin.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Namun, kamu tidak harus menjalankan `eject`. Konfigurasi bawaan sudah cukup untuk kebutuhan pengembangan kecil hingga menengah.
 
-## Learn More
+## Pelajari Lebih Lanjut
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* Dokumentasi [Create React App](https://facebook.github.io/create-react-app/docs/getting-started)
+* Dokumentasi [React](https://reactjs.org/)
